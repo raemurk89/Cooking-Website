@@ -1,0 +1,129 @@
+@import "https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #cadecb;
+}
+/* Navigatiebalk bovenaan pagina */
+#navbar-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+    font-size: 17px;
+    background-color: white;
+    height: 70px;
+    color: black;
+    list-style-type: none;
+}
+li {
+    margin: 25px;
+}
+a:link {
+    color:black;
+    text-decoration: none;
+}
+a:visited {
+    color:black;
+    text-decoration: none;
+}
+a:hover {
+    color:#cadecb;
+    text-decoration: none;
+}
+#search-tool {
+    margin-left: auto;
+    margin-top: 15px;
+    margin-right: 20px;
+    width: 180px;
+    height: 35px;
+    border-radius: 4px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 150px center;
+}
+#search-tool:focus {
+    outline-width: 0;
+}
+#search-tool::placeholder {
+    padding: 5px;
+    text-align: left;
+}
+/* Header met website naam */
+.title-of-page {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+    padding-top: 70px;
+}
+/* Search part of page */
+#search-define {
+    height: 350px;
+    background-color: white;
+    font-family: 'Karla', sans-serif;
+}
+.recipe-index-header-image {
+    width:1500px;
+    height: 350px;
+    object-fit: cover;
+    object-position: 0px -400px;
+}
+/* Sidebar met checkboxes */
+#sidebar-recipe-index {
+    height: 100%;
+    width: 350px;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+.sidebar-category {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#results-sidebar {
+    height: 1000px;
+}
+/* Slider */
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+/*# sourceMappingURL=Recipe Index.712b6034.css.map */

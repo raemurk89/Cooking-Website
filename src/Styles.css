@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cadecb;
+}
+
+
+/* Navigatiebalk bovenaan pagina */
+
+#navbar-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+    font-size: 17px;
+    background-color: white;
+    height: 70px;
+    color: black;
+    list-style-type: none;
+}
+
+li {
+    margin: 25px;
+}
+
+a:link {
+    color:black;
+    text-decoration: none;
+}
+
+a:visited {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#cadecb;
+    text-decoration: none;
+}
+
+#search-tool {
+    margin-left: auto;
+    margin-top: 15px;
+    margin-right: 20px;
+    width: 180px;
+    height: 35px;
+    border-radius: 4px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 150px center;
+}
+
+#search-tool:focus {
+    outline-width: 0;
+}
+
+#search-tool::placeholder {
+    padding: 5px;
+    text-align: left;
+}
+
+
+/* Header met website naam */
+
+.title-of-page {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+    padding-top: 70px;
+}
+
+/* Slideshow met afbeeldingen van 3 recepten en info tekst */
+
+#slideshow-container {
+    background-color: white;
+    height: 450px;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-image {
+    width:1500px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.mySlides {
+    display: none;
+}
+
+
+/* Welkomst tekst op pagina */
+
+#welcome {
+    margin-top: 40px;
+    text-align: center;
+    height: 350px;
+}
+
+#welcome-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.header-text {
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 300px 0px 300px;
+}
+
+
+
+
+/* Quiz gedeelte */
+
+#quiz {
+    height: 900px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-header {
+    padding-top: 100px;
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+}
+
+.second-line {
+    font-size: 45px;
+    font-family: 'Karla', sans-serif;
+}
+
+#quiz-container {
+    width: 850px;
+    height: 600px;
+    background-color: #cadecb;
+    border-radius: 45px;
+    margin-top: 60px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#question-text {
+    font-family: 'Karla', sans-serif;
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.options > button {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    margin: 12px;
+    width: 350px;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+.score > span {
+    color: transparent;
+}
+
+.controls > #prev, #next {
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.controls > #restart, #submit {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+}
+
+#submit {
+    width: 150px;
+    height: 50px;
+    padding: 10px 35px 10px 35px;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #04AA6D;
+    background-color: white;
+
+}
+
+#restart {
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 27px 7px 27px;
+    bottom: 20px;
+    font-size: 15px;
+}
+
+.controls {
+    margin-bottom: 30px;
+}
+
+
+/* Latest recipes gedeelte */
+#latest-recipes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    height: 600px;
+    margin-top: -70px;
+}
+
+.latest-recipes-text {
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.recipe-box {
+    background-color: white;
+    font-family: 'Karla', sans-serif;
+    width: 250px;
+    height: 320px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.recipe-box-text {
+    padding: 25px;
+}
+
+/* Footer / Contact gedeelte van de pagina */
+
+#footer-contact {
+    background-color: white;
+    height: 1000px;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+}
+
+.footer-text {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 70px;
+    margin: 55px;
+}
+
+
+
+
+
+form > #form-name, #form-email {
+    width: 450px;
+    height: 40px;
+}
+
+#form-message {
+    width: 450px;
+    height: 150px;
+}
+
+#form-button {
+    width: 450px;
+    height: 50px;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+}
+

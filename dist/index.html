@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/index.9980ef80.css">
+    <title>The Clueless Cook</title>
+</head>
+<body>
+
+<!--Navigatiebalk met home, recipe index, contact en search button-->
+<ul id="navbar-top">
+    <li id="home"><a href="http://localhost:63342/eindopdracht/index.html?_ijt=khn8mk51hgv1pliblarqkf5ncd&_ij_reload=RELOAD_ON_SAVE">Home</a></li>
+    <li id="recipe-index"><a href="/Recipe%20Index.html">Recipe Index</a></li>
+    <li id="fridge-subtance"><a href="/InYourFridge.html">What's in your fridge?</a></li>
+    <li id="contact"><a href="#footer-contact">Contact</a></li>
+
+    <input id="search-tool" type="search" placeholder="">
+</ul>
+
+
+
+<!--Header met website name-->
+<h1 class="title-of-page">The Clueless Cook</h1>
+
+
+<!--Slideshow met recepten-->
+<div id="slideshow-container">
+    <div class="mySlides">
+        <img class="slideshow-image" src="https://www.sbs.com.au/food/sites/sbs.com.au.food/files/crispy-kale-caesar-salad.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img class="slideshow-image" src="https://interactive.guim.co.uk/thrashers/recipes-header/hashed/recipe-top-image.70057171.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img class="slideshow-image" src="https://indaily.com.au/wp-content/uploads/2019/07/ACM-Book-Thai-basil.jpg" style="width:100%">
+    </div>
+</div>
+
+
+
+
+
+<!--Welkomst tekst op pagina-->
+<section id="welcome">
+<h3 id="welcome-header">Welkom to the Cluesless Cook!</h3>
+<p class="header-text">Do you ever struggle to figure out what to cook? We do!<br>
+This website gives you the solution.<br><br>
+Do the test below based on your mood, how many people you want to cook for and the difficulty of your recipe.<br>
+You can also visit our recipe index page. There you can see all recipes available.<br>
+    Or you can check some boxes (by ingredient for example) and we give you results based on the checked boxes.<br><br></p>
+<h2>Let's get cooking!</h2>
+
+
+</section>
+
+
+
+
+<!--Quiz gedeelte-->
+<section id="quiz">
+    <h2 class="quiz-header">Don't know what to cook?</h2>
+        <h2 class="quiz-header, second-line">Do the test to help you decide!</h2>
+
+<div id="quiz-container">
+    <div class="container">
+
+        <div class="content" id="question-area">
+            <div id="question-text"></div><br>
+            <div class="options">
+                <button class="btn btn-option" id="answer-one"></button><br>
+                <button class="btn btn-option" id="answer-two"></button><br>
+                <button class="btn btn-option" id="answer-three"></button><br>
+            </div>
+        </div><br><br>
+
+        <div class="score">
+            <span id="user-score"></span>
+            <span id="total-score"></span>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-submit" id="submit">Submit</button><br>
+            <button class="btn btn-restart" id="restart">Restart</button>
+            <button class="btn btn-prev" id="prev">Prev</button>
+            <button class="btn btn-next" id="next">Next</button>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+<!--Latest recipe gedeelte-->
+<p class="latest-recipes-text">Latest Recipes</p>
+<section id="latest-recipes">
+    <div class="recipe-box"><h1 class="recipe-box-text">Box 1 Recept</h1></div>
+    <div class="recipe-box"><h1 class="recipe-box-text">Box 2 Recept</h1></div>
+    <div class="recipe-box"><h1 class="recipe-box-text">Box 3 Recept</h1></div>
+    <div class="recipe-box"><h1 class="recipe-box-text">Box 4 Recept</h1></div>
+    <div class="recipe-box"><h1 class="recipe-box-text">Box 5 Recept</h1></div>
+</section>
+
+
+
+
+
+<!--Footer / Contact gedeelte van de pagina-->
+<div id="footer-contact"><br><br>
+    <h1 class="footer-text">Contact Us</h1>
+
+    <form action="">
+        <label for="form-name">Name</label><br>
+        <input type="text" id="form-name" name="name"><br><br>
+
+        <label for="form-email">Email</label><br>
+        <input type="email" id="form-email" name="email"><br><br>
+
+        <label for="form-message">Message</label><br>
+        <textarea id="form-message" name="message"></textarea><br><br>
+
+        <input type="submit" id="form-button" value="Send message">
+    </form><br><br>
+
+
+</div>
+
+
+<!--Search-->
+<div class="box-search">
+<form id="on-submit">
+    <label for="user-input-field">
+        Search by Recipe
+    </label>
+    <input type="text" id="user-input-field">
+    <button>Verzenden</button>
+</form>
+
+
+
+</div>
+
+<ul id="list-of-recipes-two">
+</ul>
+
+<script src="/index.97a9311a.js" defer=""></script>
+</body>
+</html>

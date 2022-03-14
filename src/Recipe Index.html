@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Recipe%20Index%20Styles.css">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<!--Navigatiebalk met home, recipe index, contact en search button-->
+<ul id="navbar-top">
+    <li id="home"><a href="./index.html">Home</a></li>
+    <li id="recipe-index"><a href="./Recipe%20Index.html">Recipe Index</a></li>
+    <li id="fridge-subtance"><a href="./InYourFridge.html">What's in your fridge?</a></li>
+
+    <input type="search" placeholder="">
+</ul>
+
+
+<!--Header met website name-->
+<h1 class="title-of-page">The Clueless Cook</h1>
+
+
+<!--Search part of page-->
+<section id="search-define">
+    <img class="recipe-index-header-image" src="https://pro2-bar-s3-cdn-cf.myportfolio.com/b82f8fe87915d5e8e8bac4ed002c0f81/89377df5-2f04-4fd4-af25-58a6ef8c750e_rw_3840.jpg?h=c5017fd473feb7425c625cbf4c494106" alt="blank">
+</section>
+
+
+
+<!--Sidebar met checkboxes-->
+<div id="sidebar-recipe-index">
+    <h2>Filter Recipes</h2><br/><br/>
+
+    <p class="sidebar-category">Cuisine</p><br/>
+
+    <p>Dropdown menu with options</p><br/>
+
+    <input type="checkbox" id="asian" name="asian"><label for="asian">Asian</label>
+    <input type="checkbox" id="french" name="french"><label for="french">French</label>
+    <input type="checkbox" id="mexican" name="mexican"><label for="mexican">Mexican</label>
+
+    <br/><br/>
+
+    <p class="sidebar-category">Ingredients</p><br/>
+   <p>Here comes a search boxes which gives you the option to add ingredients.</p>
+
+    <br/><br/>
+
+    <p class="sidebar-category">Difficulty</p><br/>
+
+    <div class="slider-difficulty">
+        <input type="range" min="1" max="3" value="50" class="slider" id="myRange">
+    </div>
+
+<!--    <input type="checkbox" id="easy" name="easy"><label for="easy">Easy</label>-->
+<!--    <input type="checkbox" id="medium" name="medium"><label for="medium">Medium</label>-->
+<!--    <input type="checkbox" id="hard" name="hard"><label for="hard">Hard</label>-->
+
+    <br/><br/>
+
+    <p class="sidebar-category">People</p><br/>
+    <p>Here comes a slider that allows you to choose how many people you're cooking for.</p><br/>
+
+    <div class="slidecontainer">
+        <input type="range" min="1" max="10" value="50" class="slider" id="myRange">
+    </div>
+
+    <br/><br/>
+
+    <p class="sidebar-category">Diet</p><br/>
+    <p>Here comes a dropdown box with options.</p>
+    <br/><br/>
+
+</div>
+
+<section id="results-sidebar"></section>
+
+
+<!--All recipes or filtered recipes-->
+
+<section id="result-recipes"></section>
+
+<script src="./Main.js" type="module"></script>
+</body>
+</html>
